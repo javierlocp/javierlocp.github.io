@@ -1,23 +1,104 @@
----
-layout: default
----
 
-<div class="home">
+<!DOCTYPE html>
 
-  <h1 class="page-heading">Posts</h1>
+<!-- BEGIN HTML -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<html dir="ltr" lang="en-US">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<head>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!-- Designed & Developed by Ben Bate (http://benbate.com) -->
 
-</div>
+<meta charset="utf-8">
+
+<!-- PAGE TITLES -->
+
+<title>Javier | User Interface Designer</title>
+
+<!-- META -->
+
+<meta name="description" content="your description" />
+
+<meta name="keywords" content="your keywords" />
+
+<!-- MAIN CSS -->
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<!-- SCRIPTS -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
+
+<script src="js/site.js"></script>
+
+<!-- FONTS -->
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
+
+<!-- SHORTCUT ICONS -->
+
+<link REL="SHORTCUT ICON" HREF="images/yourfavicon.ico">
+
+<link rel="apple-touch-icon-precomposed" href="images/youriphoneicon.png">
+
+<!-- RESPONSIVE (MOBILE) -->
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<header>
+
+		<a id="logo"><img src="images/logo.png"></a>
+
+		<nav>
+			<a id="about">X</a>
+			<a href="mailto:hello@javierlo.com">[</a>
+		</nav>
+
+	</header>
+
+	<div class="overlay"></div>
+
+	<div class="popup">
+
+		<p>I'm currently <span class="green">available</span> for hire.</p>
+		<p>Skype: javierlocp</p>
+		<p>Tel: (+60)016 881 8272</p>
+
+	</div>
+
+	<section id="intro">
+
+		<p>Ola! I'm Javier, an UI/UX designer from the Malaysia.</p>
+		<p>I haven&rsquo;t found time to build a proper site yet. Below are some of my previous work.</p>
+
+	</section>
+
+	<section id="thumbnails">
+
+			<ul>
+
+			</ul>
+
+	</section><!-- END THUMBNAILS -->
+
+	<footer>
+
+		Copyright &copy; 2014
+
+	</footer>
+
+</div><!-- END CONTAINER -->
+
+</body>
+
+</html>
