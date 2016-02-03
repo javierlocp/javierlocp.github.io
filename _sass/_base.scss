@@ -9,14 +9,17 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
-    background-color: $background-color;
+    background: #2a2a2a; /* Old browsers */
+      background: -moz-linear-gradient(top,  #2a2a2a 0%, #262626 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #2a2a2a 0%,#262626 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #2a2a2a 0%,#262626 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2a2a', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -37,8 +40,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -46,8 +47,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -59,8 +58,6 @@ figure > img {
 figcaption {
     font-size: $small-font-size;
 }
-
-
 
 /**
  * Lists
@@ -75,8 +72,6 @@ li {
          margin-bottom: 0;
     }
 }
-
-
 
 /**
  * Headings
@@ -157,7 +152,7 @@ pre {
  */
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:  calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -172,8 +167,6 @@ pre {
     }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -185,8 +178,6 @@ pre {
         clear: both;
     }
 }
-
-
 
 /**
  * Icons

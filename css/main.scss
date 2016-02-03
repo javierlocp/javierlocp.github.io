@@ -3,18 +3,22 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
+$regular-font-weight: 500;
+$bold-font-weight: 700;
+
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     20px;
 
-$text-color:       #111;
+$text-color:       #EFEFEF;
+$text-second-color: #626262;
+$text-width: 600px;
+
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -23,12 +27,9 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
-
+$content-width:    1140px;
 $on-palm:          600px;
-$on-laptop:        800px;
-
-
+$on-laptop:        980px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -47,7 +48,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
+	"base",
+	"layout",
+	"syntax-highlighting",
+	"helper"
 ;

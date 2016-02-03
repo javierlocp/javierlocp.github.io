@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-<div class="home">
+
+<div class="intro">
+  <h1>Hi! my name is Javier. I design experience.</h1><p>I’ve been designing & coding for startups since 2010. Take a look around and feel free to contact me if you want to work together. </p>
+
+  <ul class="social">
+    <li>{% include icon-twitter.html username=site.twitter_username %}</li>
+    <li>{% include icon-dribbble.html username=site.dribbble_username %}</li>
+    <li>{% include icon-facebook.html username=site.facebook_username %}</li>
+    <li>{% include icon-github.html username=site.github_username %}</li>
+  </ul>
+</div>
+
+<!-- <div class="home">
 
   <h1 class="page-heading">Posts</h1>
 
@@ -18,4 +30,4 @@ layout: default
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-</div>
+</div> -->

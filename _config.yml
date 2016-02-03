@@ -12,8 +12,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Hello my name is Javier, I'm a ux and ui designer specializing in mobile/desktop application and websites.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://javierlo.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: brrrger
+github_username:  surgeonist
+dribbble_username: brrrger
+facebook_username: javierlocp
 
 # Build settings
 markdown: kramdown
