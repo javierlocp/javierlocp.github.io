@@ -60,4 +60,13 @@ p{
 	}
 }
 
-
+.notification{
+	text-align: center;
+	padding: 16px 0;
+	background-color: #52A7C7;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+	h3{
+		margin: 0;
+    font-size: 15px;
+	}
+}
