@@ -27,13 +27,13 @@
     float: right;
     margin: 38px 0;
     a{
-      color: $text-second-color;
+      color: #FFF;
       -webkit-transition: color 0.3s;
       -o-transition: color 0.3s;
       transition: color 0.3s;
       &:hover{
         text-decoration: none;
-        color: #FFF;
+        color: $text-second-color;
         }
     }
     
