@@ -1,9 +1,9 @@
 /**
  * Site header
  */
-.site-header {
-    border-bottom: 1px solid $grey-color-dark;
+.site-header {    
     min-height: 100px;
+    margin-top: 3em;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -17,6 +17,14 @@
     background-image: url("../assets/images/logo.png");
     background-repeat:  no-repeat;
     background-size: 30px;
+
+        -webkit-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+        
+        -webkit-animation-delay: 0.5s;
+        -o-animation-delay: 0.5s;
+        animation-delay: 0.5s;
     &,
     &:visited {
         color: $grey-color-dark;
@@ -41,6 +49,15 @@
         display: none;
     }
 
+    .nav-list{
+      -webkit-animation-duration: 1s;
+      -o-animation-duration: 1s;
+      animation-duration: 1s;
+      
+      -webkit-animation-delay: 1.6s;
+      -o-animation-delay: 1.6s;
+      animation-delay: 1.6s;
+    }
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -100,8 +117,6 @@
         }
     }
 }
-
-
 
 /**
  * Site footer
