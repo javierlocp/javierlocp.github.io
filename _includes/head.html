@@ -6,6 +6,14 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+	<meta property="fb:app_id"          content="1234567890" /> 
+	<meta property="og:type"            content="profile" /> 
+	<meta property="og:url"             content="http://javierlo.com" /> 
+	<meta property="og:title"           content="Introducing Javier Lo's Website" /> 
+	<meta property="og:image"           content="http://www.writecamp.org/writecamp//files/copy_images/Vd3MJo.jpg" /> 
+	<meta property="og:description"    content="This is a description of Javier's website." />
+
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
