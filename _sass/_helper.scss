@@ -158,6 +158,7 @@ xtype
   background-color: #FFF;  
   @media screen and (max-width: 480px){
       display: block;
+      right: 0;
   }
 }
 .cd-headline.type .cd-words-wrapper.waiting::after {
