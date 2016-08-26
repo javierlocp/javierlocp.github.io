@@ -36,6 +36,8 @@ p{
 	  	-webkit-animation-delay: 1s;
 	  	-o-animation-delay: 1s;
 	  	animation-delay: 1s;
+
+      position: relative;
 		}
 		p{
 	  	-webkit-animation-duration: 1.3s;
@@ -137,22 +139,26 @@ xtype
 .cd-headline.type .cd-words-wrapper {
   vertical-align: top;
   overflow: hidden;
+  position: relative;
 }
 .cd-headline.type .cd-words-wrapper::after {
   /* vertical bar */
   content: '';
   position: absolute;
   right: auto;
-  top: 80%;
+  top: 37px;
   bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 50%;
+  height: 50px;
   width: 1px;
-  background-color: #FFF;
+  background-color: #FFF;  
+  @media screen and (max-width: 480px){
+      display: block;
+  }
 }
 .cd-headline.type .cd-words-wrapper.waiting::after {
   -webkit-animation: cd-pulse 1s infinite;
