@@ -1,5 +1,5 @@
-@use "variables" as *;
-@use "base" as *;
+@import "variables";
+@import "base";
 
 /**
  * Syntax highlighting styles
