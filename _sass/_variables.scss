@@ -1,0 +1,51 @@
+@use "sass:color";
+
+// Our variables
+$base-font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$regular-font-weight: 500;
+$bold-font-weight: 700;
+
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     20px;
+
+// Modern CSS Variables
+:root {
+    --primary-color: #333;
+    --background-color: #fff;
+    --text-color: #333;
+    --transition-speed: 0.3s;
+}
+
+// Dark mode variables
+.dark-mode {
+    --primary-color: #fff;
+    --background-color: #1a1a1a;
+    --text-color: #fff;
+}
+
+$text-color: var(--primary-color);
+$text-second-color: #626262;
+$text-width: 600px;
+
+$background-color: var(--background-color);
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark:  color.adjust($grey-color, $lightness: -25%);
+
+// Width of the content area
+$content-width:    1280px;
+$on-palm:          600px;
+$on-laptop:        980px;
+
+// Media query mixin
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+} 

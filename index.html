@@ -11,7 +11,6 @@ layout: default
     <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
     <link rel="preload" href="/assets/css/main.css" as="style">
     <link rel="preload" href="/assets/js/main.js" as="script">
-    <link rel="stylesheet" href="/assets/css/modern.css">
 </head>
 <body>
 <div class="intro" role="main">
@@ -27,7 +26,6 @@ layout: default
        </span>
     </h1>
       <p class="animated fadeInDown">I work with startups and small businesses that understands the value of design since 2010, my work has been featured in various sites including, Abduzeedo, Business Insider &amp; Fast Company. Contact me for coffee or work. </p>
-      <button class="contact-btn animated fadeInDown" onclick="scrollToContact()">Get in Touch</button>
   </section>
 
   <ul class="social animated fadeInDown" role="list" aria-label="Social media links">
@@ -40,13 +38,6 @@ layout: default
 </div>
 
 <script>
-function scrollToContact() {
-    const contactSection = document.querySelector('.contact-section');
-    if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
 // Add dark mode support
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.documentElement.classList.add('dark-mode');

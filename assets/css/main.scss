@@ -1,6 +1,13 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@use "sass:color";
+@use "variables" as *;
+@use "base";
+@use "layout";
+@use "syntax-highlighting";
+@use "helper";
+
 @charset "utf-8";
 
 // Our variables
@@ -15,16 +22,31 @@ $base-line-height: 1.5;
 
 $spacing-unit:     20px;
 
-$text-color:       #EFEFEF;
+// Modern CSS Variables
+:root {
+    --primary-color: #333;
+    --background-color: #fff;
+    --text-color: #333;
+    --transition-speed: 0.3s;
+}
+
+// Dark mode variables
+.dark-mode {
+    --primary-color: #fff;
+    --background-color: #1a1a1a;
+    --text-color: #fff;
+}
+
+$text-color: var(--primary-color);
 $text-second-color: #626262;
 $text-width: 600px;
 
-$background-color: #fdfdfd;
+$background-color: var(--background-color);
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark:  color.adjust($grey-color, $lightness: -25%);
 
 // Width of the content area
 $content-width:    1280px;
@@ -43,11 +65,3 @@ $on-laptop:        980px;
         @content;
     }
 }
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"base",
-	"layout",
-	"syntax-highlighting",
-	"helper"
-;

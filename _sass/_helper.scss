@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "base" as *;
+
 /**
  * Image Replacement
  */
@@ -89,47 +92,43 @@ p{
 	}
 }
 
-// Animated 
+/* Animation improvements */
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
 }
 
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+/* Smooth transitions for all interactive elements */
+a, button, .cd-words-wrapper b {
+    transition: all var(--transition-speed);
+    font-weight: $bold-font-weight;
 }
 
+/* Social icons hover effects */
+.social li {
+    transition: transform var(--transition-speed);
+}
+
+.social li:hover {
+    transform: translateY(-3px);
+}
+
+/* Improved accessibility focus states */
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
 
 /* -------------------------------- 
 
