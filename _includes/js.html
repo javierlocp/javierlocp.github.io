@@ -1,3 +1,13 @@
- <!-- Resource jQuery -->
+<!-- Resource jQuery -->
 <script src="{{ "/assets/js/jquery-2.1.1.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+
+<!-- Page Load Animation -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ensure the page content is visible after a small delay
+        setTimeout(function() {
+            document.querySelector('.page-content').style.visibility = 'visible';
+        }, 100);
+    });
+</script>
